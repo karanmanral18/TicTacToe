@@ -18,6 +18,14 @@ body .header {
   /* margin-top: 100px; */
   font-family: cursive;
 }
+.nav {
+  background: #000;
+  height: 3rem;
+  font-size: 2rem;
+  font-family: cursive;
+  color: white;
+  text-align: center;
+}
 
 .board {
   display: flex;
@@ -77,4 +85,44 @@ body .header {
   color: white;
 }
 @media only screen and (max-width: 500px) {
+  .board {
+    height: 18rem;
+    width: 18rem;
+  }
+  .square {
+    width: 6rem;
+    height: 6rem;
+    outline: 1px solid black;
+    outline-offset: -1px;
+  }
+  .top {
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 18rem;
+    font-family: cursive;
+  }
+
+  .square .heading {
+    font-size: 2rem;
+    margin: 30px;
+    color: rgb(25, 29, 4);
+  }
+  .square .heading2 {
+    font-size: 2rem;
+    margin: 30px;
+    color: rgb(93, 184, 8);
+  }
+  .reset {
+    border: 1px solid red;
+    color: red;
+    border-radius: 5px;
+    width: 18rem;
+    font-size: 1rem;
+    margin-top: 20px;
+    height: 50px;
+    background: #fff;
+  }
 }

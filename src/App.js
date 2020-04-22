@@ -11,11 +11,7 @@ class App extends Component {
       disabled: false,
       winner: [],
       winner_messages: {
-        message1: "Welcome to Tic-Tac-Toe",
-        message2: "Doing Great",
-        message3: "Well Done",
-        message4: "You Won",
-        message5: "Draw Click to Reset",
+        message1: "Welcome",
       },
     };
   }
@@ -105,6 +101,7 @@ class App extends Component {
     let assignedClass = "heading";
     return (
       <div className="App">
+        <div className="nav"> Tic Tac Toe</div>
         <div className="top">
           <h3>Turn : {this.state.player_turn}</h3>
           <h3>{this.state.winner_messages.message1}</h3>
